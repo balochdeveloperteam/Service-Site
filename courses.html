@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Courses page </title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- header design -->
+    <header class="header" id="header">
+        <a href="#" class="logo"><img src="/ref/logo.png" /> </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar" id="menu-bar">
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="#" id="drop-menu">PAGES <i class='bx bxs-down-arrow'></i></a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="service.html">SERVICES</a></li>
+                        <li> <a href="projects.html">PROJECTS</a></li>
+                        <li> <a href="Courses.html">COURSES</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">REVIEWS</a></li>
+                <li><a href="about.html">OUR STORY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+
+    <!-- page container  -->
+    <section class="bnr-pg-ser">
+        <div class="pg_container">
+            <div class="pg_background-texts">
+                <p class="left-mov">COURSES</p>
+            </div>
+            <div class="pg_background">
+
+                <div class="pg_columns">
+                    <div class="pg_column first-column">
+                        <img class="rotating-image" src="/pages/hcjslogo.png" alt="Rotating Image">
+                    </div>
+                    <div class="pg_column middle-column">
+                        <img src="/pages/colfimg.png" alt="Course Image">
+                        <h1>Our Courses</h1>
+                        <p>Get full time course with over 200+ videos and
+                            more then 100 projects with course get free access
+                            on the rest project </p>
+                        <div class="btn-box btns">
+                            <a href="#" class="btn">Get Now</a>
+                        </div>
+                    </div>
+                    <div class="pg_column last-column">
+                        <img class="rotating-image" src="/pages/hcjslogo.png" alt="Rotating Image">
+                    </div>
+                </div>
+                <div class="pg_navigation">
+                    <a href="index.html" class="prev-btn"><i class='bx bxs-log-out-circle'></i></a>
+                    <a href="projects.html" class="next-btn"><i class='bx bxs-log-in-circle'></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page banner end -->
+    <!-- page video information section  -->
+    <section class="pg-c-vid-info">
+        <div class="pg-vid-info">
+            <div class="v-inner-container">
+                <div class="col-m50">
+                    <h1>A <span>guidence </span> for understanding</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi temporibus unde corrupti
+                        ipsa accusantium,
+                        illo repellendus ullam quas suscipit ratione provident excepturi, fugit optio ducimus obcaecati.
+                    </p>
+                    <div class="btn-box btns">
+                        <a href="#" class="btn">Get Now</a>
+                    </div>
+                </div>
+                <div class="col-m50">
+                    <img class="tab-left-img" src="/ref/pssd.png" alt="Rotating Image">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- 
+<section class="home" id="home">
+    <div class="home-content">
+        <h1> Courses page </h1>
+        <h1>Hi, i am <span> Mir Baloch</span></h1>
+        <div class="text-animate">
+            <h3>Frontend Developer</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+             libero voluptates nemo? Consequuntur reprehenderit,
+             officiis voluptatum, rerum hic esse natus molestias impedit quisquam ab</p>
+        <div class="btn-box">
+            <a href="#" class="btn">Hire me</a>
+            <a href="#" class="btn">Let's talk</a>
+        </div>
+    </div>
+ 
+
+     <div class="home-img-darker"></div>
+</section> -->
+    <!-- social icon for banner -->
+    <div class="banner-icon">
+        <a href=""> <i class="bx bxl-facebook"></i></a>
+        <a href=""><i class="bx bxl-instagram"></i></a>
+        <a href=""><i class="bx bxl-linkedin"></i></a>
+        <a href=""><i class="bx bxl-youtube"></i></a>
+    </div>
+    <!-- section for Courses tabs display  -->
+
+    <section class="course-tab">
+        <div class="t-main-container">
+            <div class="tab-cotainer-c">
+
+                <div class="btn-contain">
+                    <button id="tab-btn-1" onclick="openTab(1)" class="tab-1 active-tab"> <i class='bx bxl-html5'></i>
+                        HTML 5 </button>
+                    <button id="tab-btn-2" onclick="openTab(2)" class="tab-2"> <i class='bx bxl-css3'></i> CSS 3
+                    </button>
+                    <button id="tab-btn-3" onclick="openTab(3)" class="tab-3"> <i class='bx bxl-javascript'></i>
+                        JavaScript </button>
+                    <button id="tab-btn-4" onclick="openTab(4)" class="tab-4"> <i class='bx bxl-product-hunt'></i>
+                        Projects </button>
+                </div>
+
+                <div class="tab-content-container">
+                    <div id="tab-cont-1" class="tab-content active-tab-content">
+
+                        <div class="content-left">
+                            <img class="tab-left-img" src="/ref/pssd.png" alt="Rotating Image">
+                            <div class="right-tb-inner-content">
+                                <h3>This course includes:</h3>
+                                <div class="inner-tb-icons">
+                                    <div>
+                                        <p><i class='bx bxs-videos bx-rotate-270'></i> 5 hours on-demand </p>
+                                        <p><i class='bx bxs-briefcase-alt-2'></i> Work guide-line </p>
+                                        <p><i class='bx bx-infinite'></i> Full lifetime access </p>
+                                        <p><i class='bx bxs-download'></i> 10 downloadable resources </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="tab-accordion dsk-version">
+                            <button class="accordion">Description</button>
+                            <div class="panel">
+                                <h3>Are you a beginner? </h3>
+                            <p> <br> Do you want to learn web development but do not have any idea where to start? <br>
+                                If yes, then this is THE perfect course for you. In the HTML course, you will learn all the concepts of HTML5, starting from its history to its modern structure. We will cover all the tags which are most widely used in the world of web development. Simultaneously, we will show you some of the best practices of code-writing in HTML5.<br>
+                                
+                                HTML is short for 'HyperText Markup Language', which means HTML is only used to create a structure of the web page. But without some styling, no assignment or project will look good. Thus, we will cover some portion of the CSS required to create simple web pages.<br>
+                                
+                                This HTML course will be beneficial for all who are looking to start their career in the web development field and aspire to become a Frontend or Full-stack web developer. This HTML course will be the first step towards your goal to become a web developer. To continue this journey, we would recommend you complete the other languages and skills like CSS, JavaScript, ES6, React.<br>
+                                
+                                Check out our profile to find related courses that are designed just like this.<br>
+                                
+                                
+                                
+                                PS: More lectures will be uploaded soon.<br>
+                                
+                                Who's teaching you in this course?<br>
+                                
+                                I am a Computer Science graduate highly rated instructor with a rating of 4.3 and more than 200k students on Udemy, I have been part of the corporate circle since my college days. In my early days, I was part of a startup team delivering production grid android apps. Currently, I am a lead developer at EdYoda. I’m responsible for the entire front-end development & integration with the back end. React, Python, Django is my areas of expertise. I have been delivering corporate training for Android, React, JavaScript, Python & Django. I have eyes for details & that makes me suited for delivering a finished product. I’m a fitness freak & working out is the favorite thing to do in my spare time.<br>
+                                
+                                I want everyone to enjoy the learning process and I have shared my knowledge that will be helpful for you.<br>
+                                
+                                
+                                Why learn HTML?<br>
+                                
+                                HTML is at the Core of the Internet. Learning HTML and CSS allows you to build your own websites, gives you a skill which you can use to improve work at your current Job, and also opens up an opportunity to transition into a Career in tech and :<br>
+                                1. HTML is Easy to Learn and Use <br>
+                                2. HTML is Free<br>
+                                3. HTML is supported by all Browsers<br>
+                                4. HTML is Basic of all Programming Languages<br>
+                                
+                                and many more.<br>
+                                
+                                Get started with the skill.<br>
+                                
+                                Enroll now!! see you in class.<br>
+                                
+                                
+                                Happy learning<br>
+                                Team Baloch developers<br>
+                                
+                                <span>Who this course is for:</span><br>
+                                Beginners who are new to Web Development<br>
+                                Freshers who want to learn HTML5 from scratch<br>
+                                Web Developers who wish to brush up their knowledge of HTML5</p>
+                            </div>
+                        </div> -->
+                        </div>
+
+                        <div class="content-right">
+                            <sup>Course</sup>
+                            <h2><span> HTML5</span> From Basics to Advanced level 1</h2>
+                            <h3 class="price-tab"> $99.00 </h3>
+                            <div class="five-star">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i><i
+                                    class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i> <i
+                                    class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada bx-rotate-270'></i>
+                                <span> 2430 Students</span>
+                            </div>
+                            <p> A beginner's guide for HTML5. Learn all concepts of HTML5 (with hands-on assignments and
+                                projects.)!</p>
+                            <div class="box-with-checks">
+                                <h2><span>what you will Learn</span></h2>
+                                <ul>
+                                    <li> <i class='bx bx-check bx-tada'></i> Learn to create simple web pages using
+                                        HTML5 </li>
+                                    <li><i class='bx bx-check bx-tada'></i> Learn the basics tags of HTML</li>
+                                    <li><i class='bx bx-check bx-tada'></i> To create Tables in HTML</li>
+                                    <li><i class='bx bx-check bx-tada'></i> To create customizable forms and add form
+                                        validation in HTML</li>
+                                    <li><i class='bx bx-check bx-tada'></i> To include multimedia(audio,video, images)
+                                        in your web page</li>
+                                    <li><i class='bx bx-check bx-tada'></i> To create your own vector graphics using SVG
+                                    </li>
+                                    <li><i class='bx bx-check bx-tada'></i> 4 projects to test your knowledge</li>
+                                </ul>
+
+                            </div>
+                            <div class="btn-box btns gap-btn">
+                                <a href="#" class="btn">Buy Now!</a>
+                                <a href="#" class="btn">Fill Now!</a>
+                            </div>
+                            <div class="tab-accordion mb-version">
+                                <button class="accordion"><span> Description</span></button>
+                                <div class="panel">
+                                    <h3>Are you a beginner? </h3>
+                                    <p> <br> Do you want to learn web development but do not have any idea where to
+                                        start? <br> </p>
+                                    <p> If yes, then this is THE perfect course for you. In the HTML course, you will
+                                        learn all the concepts of HTML5,
+                                        starting from its history to its modern structure. We will cover all the tags
+                                        which are most widely used in the world of web development.
+                                        Simultaneously, we will show you some of the best practices of code-writing in
+                                        HTML5.</p>
+
+                                    <p> HTML is short for 'HyperText Markup Language', which means HTML is only used to
+                                        create a structure of the web page. But without some styling,
+                                        no assignment or project will look good. Thus, we will cover some portion of the
+                                        CSS required to create simple web pages.</p>
+
+                                    <p> This HTML course will be beneficial for all who are looking to start their
+                                        career in the web development field and aspire to become a Frontend or
+                                        Full-stack web developer. This HTML course will be the first step towards your
+                                        goal to become a web developer. To continue this journey,
+                                        we would recommend you complete the other languages and skills like CSS,
+                                        JavaScript, ES6, React.</p>
+
+                                    <p> <b> PS: More lectures will be uploaded soon.</b></p>
+
+                                    <span>It's teaching you in this course?</span><br>
+
+                                    <p> I want everyone to enjoy the learning process and I have shared my knowledge
+                                        that will be helpful for you.</p><br>
+                                    <span> Why learn HTML?</span><br>
+
+                                    <p> HTML is at the Core of the Internet. Learning HTML and CSS allows you to build
+                                        your own websites,
+                                        gives you a skill which you can use to improve work at your current Job, and
+                                        also opens up an opportunity to transition
+                                        into a Career in tech and :</p>
+                                    <br>
+                                    <p>
+                                        1. HTML is Easy to Learn and Use <br>
+                                        2. HTML is Free<br>
+                                        3. HTML is supported by all Browsers<br>
+                                        4. HTML is Basic of all Programming Languages<br>
+
+                                        and many more.<br><br>
+
+                                        <b>Get started with the skill.</b><br>
+                                    </p>
+
+                                    <p><b>Enroll now!! see you in class.</b></p>
+                                    <p><b>Happy learning</b><br><br> </p>
+                                    <p><b> Team Baloch developers</b><br><br></p>
+                                    <span>Who this course is for:</span><br>
+                                    <p> Beginners who are new to Web Development
+                                        Freshers who want to learn HTML5 from scratch
+                                        Web Developers who wish to brush up their knowledge of HTML5.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-cont-2" class="tab-content">
+                        <div class="content-left">
+                            <img class="tab-left-img" src="/ref/pssd.png" alt="Rotating Image">
+                        </div>
+                        <div class="content-right">
+                            <h1> HTML <span>Course</span> 2</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas officia neque
+                                voluptates iste repellendus tempore quo eos, commodi quis veniam laboriosam magnam!
+                                Neque deserunt iusto ratione porro a aut!</p>
+                        </div>
+                    </div>
+                    <div id="tab-cont-3" class="tab-content">
+                        <div class="content-left">
+                            <img class="tab-left-img" src="/ref/pssd.png" alt="Rotating Image">
+                        </div>
+                        <div class="content-right">
+                            <h1> HTML <span>Course</span> 3</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas officia neque
+                                voluptates iste repellendus tempore quo eos, commodi quis veniam laboriosam magnam!
+                                Neque deserunt iusto ratione porro a aut! ddd</p>
+                        </div>
+                    </div>
+                    <div id="tab-cont-4" class="tab-content">
+                        <div class="content-left">
+                            <img class="tab-left-img" src="/ref/pssd.png" alt="Rotating Image">
+                        </div>
+                        <div class="content-right">
+                            <h1> HTML <span>Course</span> 4</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas officia neque
+                                voluptates iste repellendus tempore quo eos, commodi quis veniam laboriosam magnam!
+                                Neque deserunt iusto ratione porro a aut! ddd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- section how does it work -->
+
+    <section class="guidence" id="PROJECTS">
+        <h2 class="heading">HOW DOES IT<span> WORK?</span></h2>
+        <div class="guide-row">
+
+            <div class="guide-calumn">
+
+                <div class="guide-box">
+                    <div class="guide-content ">
+                        <h3 class="title-step"><span> 01 </span></h3>
+                        <div class="line-box-head">
+                            <div class="line-box"></div>
+                        </div>
+                        <div class="content guide-hadings">
+                            <h3>Selecting Your Course</h3>
+                            <p>Please choose your desired course from the list above.
+                                Once selected, kindly complete the order form below.
+                                After submitting the form, we will promptly send you an invoice.
+                                Please prepare to make the payment upon receipt. </p>
+
+                        </div>
+                    </div>
+                    <div class="guide-content">
+                        <h3 class="title-step"> <span> 02 </span></h3>
+                        <div class="line-box-head">
+                            <div class="line-box"></div>
+                        </div>
+                        <div class="content guide-hadings">
+
+                            <h3>Payment Confirmation</h3>
+                            <p>Upon receiving your payment,
+                                we will confirm the receipt and reach out to you via email.
+                                After verifying your email, please allow us some time to process your enrollment.</p>
+                        </div>
+                    </div>
+                    <div class="guide-content ">
+                        <h3 class="title-step"> <span> 03 </span></h3>
+                        <div class="line-box-head">
+                            <div class="line-box"></div>
+                        </div>
+                        <div class="content guide-hadings">
+
+                            <h3>Accessing Your Course</h3>
+                            <p>Once your email is confirmed, you will gain access to the selected course.
+                                <br><span> Important: </span> The email provided must belong to you. If there is any
+                                doubt about the ownership of the email, we reserve the right to revoke access until
+                                proper verification is completed.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- form section -->
+
+    <!-- section contact form  -->
+    <section class="contact" id="CONTACT_US">
+
+        <h2 class="heading">Order <span>Now!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field-full">
+                    <input type="text" placeholder="Subject" name="subject" autocomplete="on" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" name="name" autocomplete="on" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" name="email" autocomplete="email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Phone number" name="number" autocomplete="on" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" name=" email subject" autocomplete="on" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <select id="country" name="country" autocomplete="on" class="form-control" required>
+                        <option value="" selected disabled hidden>Country</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Åland Islands">Åland Islands</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Belize">Belize</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Bouvet Island">Bouvet Island</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Cape Verde">Cape Verde</option>
+                        <option value="Cayman Islands">Cayman Islands</option>
+                        <option value="Central African Republic">Central African Republic</option>
+                        <option value="Chad">Chad</option>
+                        <option value="Chile">Chile</option>
+                        <option value="China">China</option>
+                        <option value="Christmas Island">Christmas Island</option>
+                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The
+                        </option>
+                        <option value="Cook Islands">Cook Islands</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cote D'ivoire">Cote D'ivoire</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Cyprus">Cyprus</option>
+                        <option value="Czech Republic">Czech Republic</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Dominican Republic">Dominican Republic</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                        <option value="Faroe Islands">Faroe Islands</option>
+                        <option value="Fiji">Fiji</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="French Guiana">French Guiana</option>
+                        <option value="French Polynesia">French Polynesia</option>
+                        <option value="French Southern Territories">French Southern Territories</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Gibraltar">Gibraltar</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        <option value="Guam">Guam</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guernsey">Guernsey</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guinea-bissau">Guinea-bissau</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Isle of Man">Isle of Man</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Jersey">Jersey</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Kiribati">Kiribati</option>
+                        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of
+                        </option>
+                        <option value="Korea, Republic of">Korea, Republic of</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lebanon">Lebanon</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Macao">Macao</option>
+                        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav
+                            Republic of</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Marshall Islands">Marshall Islands</option>
+                        <option value="Martinique">Martinique</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Mayotte">Mayotte</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                        <option value="Moldova, Republic of">Moldova, Republic of</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Mongolia">Mongolia</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Nauru">Nauru</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                        <option value="New Caledonia">New Caledonia</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Niue">Niue</option>
+                        <option value="Norfolk Island">Norfolk Island</option>
+                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Palau">Palau</option>
+                        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Papua New Guinea">Papua New Guinea</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Philippines">Philippines</option>
+                        <option value="Pitcairn">Pitcairn</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Reunion">Reunion</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Russian Federation">Russian Federation</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Saint Helena">Saint Helena</option>
+                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                        <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                        <option value="Samoa">Samoa</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leone">Sierra Leone</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Slovakia">Slovakia</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="Solomon Islands">Solomon Islands</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                            Sandwich Islands</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Suriname">Suriname</option>
+                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                        <option value="Swaziland">Swaziland</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="Tajikistan">Tajikistan</option>
+                        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Timor-leste">Timor-leste</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Tokelau">Tokelau</option>
+                        <option value="Tonga">Tonga</option>
+                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Turkmenistan">Turkmenistan</option>
+                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                        <option value="Tuvalu">Tuvalu</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States">United States</option>
+                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                        </option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Viet Nam">Viet Nam</option>
+                        <option value="Virgin Islands, British">Virgin Islands, British</option>
+                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                        <option value="Wallis and Futuna">Wallis and Futuna</option>
+                        <option value="Western Sahara">Western Sahara</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <select id="payment-opt" name="Payment Through" class="form-control" required>
+                        <option value="" selected disabled hidden>Select Paymet method</option>
+                        <option value="PayPal">PayPal </option>
+                        <option value="Bank Transfer"> Bank Transfer</option>
+                        <option value="Crypto Currency"> Crypto Currency </option>
+                        <option value="Other"> Other (i will mention)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field-full">
+                    <select id="course-selection" name="selected Courses" class="form-control" required>
+                        <option value="" selected disabled hidden>Select the courses</option>
+                        <option value="HTML COURSES">HTML Ref: CH-01 Cost = $100</option>
+                        <option value="CSS COURSES"> CSS Ref: CC-02 Cost = $100 </option>
+                        <option value="JavaScript COURSES"> JavaScript Ref: CJ-03 Cost = $150 </option>
+                        <option value="Projects (html, css, js)"> Projects (Html, css, js) Ref: CP-04 Cost = $100
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="textarea-field" id="textarea" cols="40" row="30" placeholder="Your Message"
+                    required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+
+    </section>
+    <!-- end page container -->
+    <!-- newsletter subscription section  -->
+    <section id="contact" class="newsletter-sec">
+        <h2 class="nwsltr-heading"> Join Our Newsletter </h2>
+        <h3 class="nwsltr-sub-txt"> E-mail Newsletter using CSS </h3>
+        <div class="nws-letr-wrapper">
+            <div class="signup-box">
+                <form class="signup-form">
+                    <input type="email" placeholder="example@gmail.com" name="email" class="signup-input" required>
+
+                    <div class="btn-box btns">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter subscription section  -->
+    <!-- footer design  -->
+    <div class="footer-wave-space"></div>
+    <footer class="footer">
+        <div class="wavecoursepg">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-cols">
+                <div class="footer-logo">
+                    <img src="/ref/logo.png" alt="footer-logo" class="footer-img-logo">
+                    <p class="footer-sub-text"> The best e-commerce mentoring program in europe </p>
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6563727b07af8a7a9a2ec9bb_Trust%20Pilot%20Micro%20Combo.svg"
+                        alt="footer-img" class="footer-review-icon">
+                    <p class="footer-sub-text"> <a href="#">Balochdevelopers@gmail.com</a> </p>
+                </div>
+            </div>
+
+            <div class="footer-cols">
+                <div class="footer-logo footer-midle-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cfa4423fe49bb1a07a2c_Frame%20157-p-500.png"
+                        alt="footer-img" class="footer-partner-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cde6314cdd477f7a2357_image%20114.png"
+                        alt="footer-img" class="footer-partner-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cde6995b1f269c4880e0_image%20115.png"
+                        alt="footer-img" class="footer-partner-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cde680b6ecf4999cc460_image%20117.png"
+                        alt="footer-img" class="footer-partner-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cde65d791c5d9138fb3c_image%20112.png"
+                        alt="footer-img" class="footer-partner-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cfa48fec3429c4120623_Frame%20156.png"
+                        alt="footer-img" class="footer-partner-icons">
+                    <img src="https://cdn.prod.website-files.com/652a852879cbf4ed0704b7b0/6536cfa48bf02fe93e6eebc3_Mask%20group.png"
+                        alt="footer-img" class="footer-partner-icons">
+
+                </div>
+            </div>
+
+            <div class="footer-cols">
+                <div class="footer-menus">
+                    <h2>Main Menu</h2>
+                    <ul>
+                        <li> Home</li>
+                        <li>Services</li>
+                        <li>Courses</li>
+                        <li>Projects</li>
+                        <li>Reviews</li>
+
+                    </ul>
+                </div>
+                <div class="footer-menus">
+                    <h2>Policies</h2>
+                    <ul>
+                        <li>Privecy policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Our Story</li>
+                        <li>Contact Us</li>
+                        <li>Book a Meeting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 By Mir Baloch | All rights reserved</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="../include.js"></script> -->
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
